@@ -15,6 +15,11 @@ const connect = function() {
     console.log(data);
   });
 
+  conn.on("connect", () => {
+    console.log("Succesfully connected to the game server");
+    conn.write("Name: GAA");
+  });
+
   return conn;
 };
 
