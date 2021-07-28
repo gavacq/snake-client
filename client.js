@@ -18,7 +18,16 @@ const connect = function() {
   conn.on("connect", () => {
     console.log("Succesfully connected to the game server");
     conn.write("Name: GAA");
+    // setInterval(() => {
+    //   conn.write("Move: up");
+    // }, 50);
   });
+
+  // conn.on("error", err => {
+  //   console.log(err);
+    
+  //   return err;
+  // });
 
   return conn;
 };
