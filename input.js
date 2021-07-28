@@ -6,6 +6,9 @@ const handleUserInput = data => {
   const down = "\u0073";
   const right = "\u0064";
   const left = "\u0061";
+  const z = "\u007A";
+  const x = "\u0078";
+  const c = "\u0063";
 
   switch (data) {
   case ctrlC:
@@ -23,6 +26,14 @@ const handleUserInput = data => {
   case left:
     connection.write("Move: left");
     break;
+  case z:
+    connection.write('Say: hello!');
+    break;
+  case x:
+    connection.write("Say: Drink water!");
+    break;
+  case c:
+    connection.write(": ");
   }
 };
 
