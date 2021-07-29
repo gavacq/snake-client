@@ -33,7 +33,7 @@ const handleUserInput = data => {
     connection.write("Say: Drink water!");
     break;
   case c:
-    connection.write(": ");
+    connection.write("Say: I am evil snake!");
   }
 };
 
